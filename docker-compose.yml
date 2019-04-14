@@ -2,6 +2,16 @@ version: '2'
 
 services:
   
+  # filebeat:
+  #   build:
+  #     context: filebeat/
+  #   volumes:
+  #     - ./filebeat/config/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+  #     - ./filebeat/data:/usr/share/filebeat/data/:rw
+  #     - ./iis:/usr/share/logstash/iis
+  #   networks:
+  #     - elk
+
   elasticsearch:
     build:
       context: elasticsearch/
